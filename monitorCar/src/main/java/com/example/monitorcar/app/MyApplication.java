@@ -6,6 +6,7 @@ import com.baidu.mapapi.SDKInitializer;
 
 import android.app.Activity;
 import android.app.Application;
+//
 
 
 public class MyApplication extends Application {

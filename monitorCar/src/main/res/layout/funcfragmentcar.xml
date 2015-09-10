@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/middle_switch_tab"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@color/transparent" >
+
+        <Button
+            android:id="@+id/togglebtn_nowtrace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="@string/current_trace"
+            android:textColor="@color/qqblue"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="3px"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/black" />
+
+        <Button
+            android:id="@+id/togglebtn_historytrace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="@string/history_trace"
+            android:textColor="@color/lightgrey"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <com.example.monitorcar.widgets.XListView
+        android:id="@+id/carListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:overScrollMode="never"
+        android:divider="@null" >
+    </com.example.monitorcar.widgets.XListView>
+
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Packetblue"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <!-- Action-bar looking view -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_dimen" >
+
+        <ImageView
+            android:id="@+id/drawer_indicator"
+            android:layout_width="@dimen/actionbar_dimen"
+            android:layout_height="@dimen/actionbar_dimen"
+            android:layout_gravity="start"
+            android:background="@drawable/drawer_selector"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/indicator_style"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/actionbar_dimen"
+            android:background="@drawable/drawer_selector"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="right" >
+
+            <Button
+                android:id="@+id/button_to_popup"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/actionbar_dimen"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/drawer_selector"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/search"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <FrameLayout
+            android:id="@+id/fragment_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white" >
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/drawer_content"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:padding="14dp" >
+
+                <ImageView
+                    android:id="@+id/img_user"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/userhead" />
+
+                <TextView
+                    android:id="@+id/txt_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="12dp"
+                    android:gravity="center"
+                    android:text="@string/user_name"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/lightgrey" />
+
+            <ListView
+                android:id="@+id/drawer_listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null" >
+            </ListView>
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

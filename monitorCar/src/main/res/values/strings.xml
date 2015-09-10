@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">车载监控系统</string>
+    <string name="menu_settings">Settings</string>
+    <string name="hint_username">用户名</string>
+    <string name="hint_password">密码</string>
+    <string name="hint_verifycode">验证码</string>
+    <string name="login">登       录</string>
+    <string name="register">注       册</string>
+    <string name="register_">注册</string>
+    <string name="retrivepassword">找回密码？</string>
+    <string name="confirmpassword">确认密码</string>
+    <string name="newuser">新用户</string>
+    <string name="search">查询</string>
+    <string name="user_name">用户名</string>
+    <string name="mark">*</string>
+
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    
+    <string name="current_trace">当前轨迹</string>
+    <string name="history_trace">历史轨迹</string>
+    <string name="current_alarm">当前告警</string>
+    <string name="history_alarm">历史告警</string>
+    
+	<string name="alarm_description">告警描述： </string>    
+	<string name="alarm_object">告警对象： </string>  
+	<string name="alarm_time">告警时间： </string>  
+	<string name="alarm_extra">附加信息： </string>  
+	
+	<string name="geren_setting">个人设置</string>
+	<string name="fankui_setting">反馈建议</string>
+	<string name="guanyu_setting">关于</string>
+	<string name="huancun_setting">清楚缓存</string>
+	<string name="tuichu_setting">退出账号</string>
+	
+	<string name="staffinfo">员工信息</string>
+	<string name="info_usr">用户名</string>
+    <string name="info_realusr">真实姓名</string>
+    <string name="info_alias">别名</string>
+    <string name="info_role">角色</string>
+    <string name="info_email">电子邮箱</string>
+    <string name="info_phonenum">手机号码</string>
+    <string name="info_homenum">家庭电话</string>
+    <string name="info_homeaddr">家庭地址</string>
+    <string name="info_compname">公司名称</string>
+    <string name="info_compaddr">公司地址</string>
+    
+    <string name="car_trace">车辆轨迹</string>
+    <string name="accelerate">加速</string>
+    
+    
+    <string name="hr_app_name">智能手环</string>
+    <string name="test">测试</string>
+</resources>

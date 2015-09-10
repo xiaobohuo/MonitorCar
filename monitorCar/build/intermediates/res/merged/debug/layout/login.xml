@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    >
+
+    <TextView
+        android:id="@+id/topname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dip"
+        android:background="@drawable/txtborder"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:background="@color/transparent"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:hint="@string/hint_username"
+            android:maxLength="30"
+            android:paddingRight="2dp"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColorHighlight="#7e4d84" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="1.0px"
+            android:layout_marginRight="1.0px"
+            android:background="#ffc0c3c4" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:background="@color/transparent"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:hint="@string/hint_password"
+            android:paddingRight="2dp"
+            android:password="true"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_verifycode"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/verifycode"
+            android:layout_width="140dp"
+            android:layout_height="45dp"
+            android:background="@drawable/txtborder"
+            android:hint="@string/hint_verifycode"
+            android:padding="6dp" />
+
+        <ImageView
+            android:id="@+id/img_verifycode"
+            android:layout_width="140dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/loginbtn"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:background="@drawable/bg_border1"
+            android:onClick="login_login"
+            android:text="@string/login" 
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
+
+        
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rl_find_register"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        >
+        <Button
+            android:id="@+id/findback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:layout_alignParentLeft="true"
+            android:text="@string/retrivepassword" 
+            android:textSize="13sp"
+            android:textColor="@color/lightgrey"/>
+        
+        <Button
+            android:id="@+id/registerbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:layout_alignParentRight="true"
+            android:text="@string/newuser"
+            android:textSize="13sp"
+            android:textColor="@color/lightgrey" />
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/Users/dengxiaoyu/工作/MonitorCar/monitorCar/src/main/res/layout/login.xml -->

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/dengxiaoyu/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="/Users/dengxiaoyu/工作/MonitorCar/monitorCar/build/intermediates/pre-dexed/debug/support-v4-19.1.0-8767ea36ff2e569bd226807930e5e629c4622417.jar" />
+    </item>
+    <item
+        jar="/Users/dengxiaoyu/工作/MonitorCar/monitorCar/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28">
+        <dex dex="/Users/dengxiaoyu/工作/MonitorCar/monitorCar/build/intermediates/pre-dexed/debug/classes-8297ddaae774239e0358f7980b43416827ffb6f4.jar" />
+    </item>
+    <item
+        jar="/Users/dengxiaoyu/工作/MonitorCar/monitorCar/libs/baidumapapi_v3_5_0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="a24c63a76e95fb308964c73cf6bdddeb5c6361b1">
+        <dex dex="/Users/dengxiaoyu/工作/MonitorCar/monitorCar/build/intermediates/pre-dexed/debug/baidumapapi_v3_5_0-1f38365177adb301e190b29f4dda572168339d15.jar" />
+    </item>
+    <item
+        jar="/Users/dengxiaoyu/工作/MonitorCar/monitorCar/build/intermediates/exploded-aar/MonitorCar/datetimepickerlibrary/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="7375538cc07cca4f8396f4de2385212d4c499dd2">
+        <dex dex="/Users/dengxiaoyu/工作/MonitorCar/monitorCar/build/intermediates/pre-dexed/debug/classes-bce887d24bd4ddea87461eb9e9169dc5c1ee7a16.jar" />
+    </item>
+    <item
+        jar="/Users/dengxiaoyu/工作/MonitorCar/monitorCar/build/intermediates/exploded-aar/MonitorCar/library_datetime/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d50587ea765c9b8e122f5564c0dab94c3c61d1a3">
+        <dex dex="/Users/dengxiaoyu/工作/MonitorCar/monitorCar/build/intermediates/pre-dexed/debug/classes-c10845d16d71b52ef8a50cde7f0221f6f8b9d853.jar" />
+    </item>
+
+</items>

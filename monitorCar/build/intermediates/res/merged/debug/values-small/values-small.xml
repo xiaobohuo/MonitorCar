@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/dengxiaoyu/工作/MonitorCar/monitorCar/build/intermediates/exploded-aar/MonitorCar/datetimepickerlibrary/unspecified/res/values-small/values-small.xml -->
+    <eat-comment/>
+    <dimen name="date_picker_view_animator_height">190.0dip</dimen>
+    <dimen name="selected_calendar_layout_height">145.0dip</dimen>
+</resources>

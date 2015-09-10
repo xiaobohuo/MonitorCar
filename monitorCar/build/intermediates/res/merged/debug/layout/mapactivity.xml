@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/map_slideback"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Packetblue"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_dimen"
+        android:background="@color/Packetblue" >
+
+        <Button
+            android:id="@+id/register_btn_back"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dip"
+            android:background="@drawable/backbtn_selector"
+            android:onClick="back_call" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dip"
+            android:gravity="center_vertical"
+            android:text="@string/car_trace"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/map_stop_search"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:gravity="center_vertical|right"
+            android:onClick="btn_stop_search"
+            android:paddingRight="12dp"
+            android:text="@string/accelerate"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_mapcontroller"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/trace_slowdown"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/action_previous"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/trace_pause"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/action_play"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/trace_accelerate"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/action_next"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="right" >
+
+                <Button
+                    android:id="@+id/map_selec_time_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/actionbar_dimen"
+                    android:background="@drawable/drawer_selector"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="@string/search"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+</LinearLayout><!-- From: file:/Users/dengxiaoyu/工作/MonitorCar/monitorCar/src/main/res/layout/mapactivity.xml -->
